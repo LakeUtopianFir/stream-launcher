@@ -1,0 +1,18 @@
+version: '3.9'
+services:
+  stream-launcher:
+    image: node:latest
+    user: root
+    restart: always
+    ports:
+    - 3000:3000
+    deploy:
+      replicas: 1
+    #environment:
+    volumes:
+    - /home/mcooke/P_Projects/stream-launcher:/stream
+    working_dir: /stream
+    command:
+      - '/bin/bash'
+      - '-c'
+      - 'npm i && node app.js'
