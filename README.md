@@ -9,8 +9,9 @@
     **Linux** **https://docs.docker.com/desktop/install/linux-install/**
 
     **Mac:** **https://docs.docker.com/desktop/install/mac-install/**
-2. ```docker compose up -d```
-3. ```POST to localhost:3000/stream```
+2. ```clone repo```
+3. ```docker compose up -d```
+4. ```POST to localhost:3000/stream```
 
 **JSON PAYLOAD**
 ```
