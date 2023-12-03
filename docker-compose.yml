@@ -8,9 +8,8 @@ services:
     - 3000:3000
     deploy:
       replicas: 1
-    #environment:
     volumes:
-    - /home/mcooke/P_Projects/stream-launcher:/stream
+    - $(LOCAL_PATH):/stream # Update LOCAL_PATH wit local folder directory
     working_dir: /stream
     command:
       - '/bin/bash'
