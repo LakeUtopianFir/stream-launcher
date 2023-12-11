@@ -22,9 +22,9 @@
 "rtmp_key": "{RTMP_URL}",                   // RTMP integtion server endpoint
 "local_name": "{FILENAME}"                  // local filename if "local_capture" is set to true
 }
-
+```
 eg.
-
+```
 curl --location 'http://localhost:3000/stream' \
 --header 'Content-Type: application/json' \
 --data '{
